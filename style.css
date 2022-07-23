@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --magenta: hsl(300, 43%, 22%);
+    --graysh-magenta: hsl(303, 10%, 53%);
+    --pink: hsl(333, 80%, 67%);
+    --light-magenta: hsl(300, 24%, 96%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'league spartan', sans-serif;
+}
+
+body {
+    font-size: 15px;
+    height: calc(100vh-0.1);
+    background-image: url('images/bg-pattern-top-mobile.svg'), url('images/bg-pattern-bottom-mobile.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.header__title {
+    margin-bottom: 1rem;
+    color: var(--magenta);
+}
+
+.header__text {
+    color: var(--graysh-magenta);
+    line-height: 1.2rem;
+}
+
+.rating__box {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 80vw;
+    border-radius: 0.5rem;
+    background-color: var(--light-magenta);
+}
+
+.rating__stars {
+    letter-spacing: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.rating__comment {
+    color: var(--magenta);
+    font-weight: 700;
+}
+
+.cards__box {
+    padding: 1.5rem;
+    background-color: var(--magenta);
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.cards__header {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.cards__img {
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 1rem;
+}
+
+.cards__name {
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+.cards__job {
+    color: var(--pink);
+    font-weight: normal;
+}
+
+.cards__comment {
+    color: var(--light-magenta);
+    line-height: 1.2rem;
+}
+
+.attribution {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 926px) {
+    body {
+        background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0 -50px, 300px -50px;
+    }
+
+    .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container {
+        margin-top: 4rem;
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .header {
+        margin-left: 0;
+        text-align: start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 33vw;
+        margin-right: 0.3rem;
+    }
+
+    .header__title {
+        font-size: 1.4rem;
+    }
+
+    .rating {
+        width: 45vw;
+    }
+
+    .rating__box {
+        justify-content: start;
+        width: 350px;
+    }
+
+    .rating__box--desktop2 {
+        margin-left: 3rem;
+    }
+
+    .rating__box--desktop3 {
+        margin-left: 6rem;
+    }
+
+    .rating__stars {
+        margin-right: 1rem;
+    }
+
+    .cards {
+        flex-direction: row;
+    }
+
+    .cards__box {
+        width: 30%;
+        height: 210px;
+    }
+
+    .cards__header {
+        justify-content: flex-start;
+    }
+
+    .cards__box--desktop2 {
+        margin-top: 2rem;
+    }
+
+    .cards__box--desktop3 {
+        margin-top: 4rem;
+    }
+
+}
