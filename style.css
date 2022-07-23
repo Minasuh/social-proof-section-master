@@ -142,12 +142,12 @@ body {
     }
 
     .rating {
-        width: 45vw;
+        width: 46vw;
     }
 
     .rating__box {
         justify-content: start;
-        width: 350px;
+        max-width: 370px;
     }
 
     .rating__box--desktop2 {
